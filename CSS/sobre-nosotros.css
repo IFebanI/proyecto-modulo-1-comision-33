@@ -1,0 +1,109 @@
+* .superior {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.quienes-somos {
+  text-align: center;
+  color: #fff;
+}
+
+.superior-derecho {
+  width: 100%;
+  height: 80%;
+  margin-top: 5rem;
+}
+
+.superior-derecho img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-bottom: 0;
+}
+
+.separador-texto {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d62826;
+}
+
+.separador-texto h2 {
+  color: #fff;
+}
+
+.miembros {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.miembros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.miembros img {
+  color: white;
+  width: 200px;
+  border-radius: 100%;
+  border: 5px solid black;
+  transition: 0.4s;
+}
+
+.miembros img:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px black, 0 0 1em blue, 0 0 0.2em #d62826;
+}
+
+.miembros h2:hover {
+  text-shadow: 3px 3px 6px black, 0 0 1em blue, 0 0 0.2em #d62826;
+  transform: scale(1.1);
+}
+
+.miembros h2 {
+  color: #fff;
+  margin: 5px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.proyecto {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.blare {
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px 6px black, 0 0 1em blue, 0 0 0.2em #d62826;
+  font-size: 10rem;
+}
+
+.iconproyect {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/* -------------------------------*/
+@media (max-width: 890px) {
+  .iconproyect {
+    width: 50%;
+    height: 50%;
+    object-fit: fill;
+  }
+}

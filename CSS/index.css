@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio&display=swap");
+
+/*VARIABLES*/
+
+:root {
+  --azul: #003049;
+  --rojo: #d62826;
+  --naranja: #f77f00;
+  --naranja2: #fcbf49;
+  --beige: #eae2b7;
+  --Facebook-color: #3b5998;
+  --Google-color: #db4a39;
+  --Twitch: #6441a5;
+}
+
+* {
+  font-family: "Antonio", sans-serif;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #000000;
+  color: #fff;
+}
+
+/*BOTONES MODAL*/
+
+.Botones-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.Botones-redes button {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #fff;
+}
+
+.btn-facebook {
+  border: 1px solid var(--Facebook-color);
+  transition: 0.4s;
+}
+
+.btn-facebook:hover {
+  border: 1px solid black;
+  background-color: #3b5998;
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn-google {
+  border: 1px solid #db4a39;
+  transition: 0.4s;
+}
+
+.btn-google:hover {
+  border: 1px solid black;
+  background-color: #db4a39;
+  color: white;
+  transform: scale(1.1);
+}
+
+.contraseña-olvidada {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  transition: 0.4s;
+}
+
+.contraseña-olvidada p {
+  text-decoration: underline;
+}
+
+.contraseña-olvidada:hover {
+  transform: scale(1.1);
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subtotal {
+  margin-right: 1rem;
+}
+
+/*FIN BOTONES MODAL*/
+
+/* NAVBAR */
+
+.navegacion {
+  background-color: var(--azul) !important;
+}
+
+.navegacion a {
+  color: #fff;
+  transition: 0.4s;
+}
+
+.navegacion ul li:active a {
+  color: #fff;
+}
+
+.navegacion a:hover {
+  color: #fff;
+  scale: calc(0.95);
+}
+
+.submenu a {
+  color: #000000;
+}
+
+.submenu a:hover {
+  background-color: var(--rojo) !important;
+  color: #fff;
+}
+
+/* FIN NAVBAR*/
+
+body {
+  background-image: url(../img/Bg-home.png);
+  object-fit: cover;
+}
+
+/* CARRUSEL */
+
+.cont-carrusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 50vh;
+}
+
+.titulos h5 {
+  font-size: 50px;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.titulos p {
+  background-color: #d62826;
+}
+
+.slide {
+  width: 80vw;
+  height: 45vh;
+  border-radius: 20px;
+}
+
+.slide img {
+  width: 80vw;
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* FIN CARRUSEL */
+
+/* SECCIONES */
+
+.secciones {
+  width: 100%;
+  height: 30vh;
+  margin-top: 3rem;
+}
+
+.bg-color {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 25%;
+  background: var(--rojo);
+}
+
+.titulo-seccion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.carta i {
+  color: #d62826;
+}
+
+.carta {
+  margin-top: 2rem;
+}
+
+.carta:hover {
+  background-color: var(--azul);
+  color: #fff;
+}
+
+.carta:hover img {
+  filter: blur(1px);
+}
+
+.carta:hover i {
+  color: #fff;
+}
+
+.carta img {
+  height: 6.5rem;
+  object-fit: cover;
+}
+.card-link {
+  height: 100%;
+  width: 100%;
+}
+/* FIN SECCIONES */
+
+/* PUBLICIDAD */
+
+.publicidad {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carta-publi {
+  width: 95vw;
+  height: 30vh;
+}
+
+.carta-publi img {
+  width: auto;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 20px;
+  border-radius: 0px !important;
+}
+
+/* FIN PUBLICIDAD */
+
+/* FOOTER */
+
+.medio-de-pago img {
+  height: 24px;
+  border: 1px solid black;
+}
+
+.btn-fb i:hover {
+  color: var(--Facebook-color);
+  transition: 0.4s;
+  scale: calc(1.1);
+}
+.btn-tw i:hover {
+  color: #1da1f2;
+  transition: 0.4s;
+  scale: calc(1.1);
+}
+.btn-yt i:hover {
+  color: #c4302b;
+  transition: 0.4s;
+  scale: calc(1.1);
+}
+.btn-ig i:hover {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+  transition: 0.4s;
+  scale: calc(1.1);
+}
+
+/* FIN FOOTER */
+
+@media screen and (max-width: 1000px) {
+  .medio-de-pago {
+    display: none;
+  }
+
+  .secciones {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .bg-color {
+    height: 100% !important;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carta {
+    width: 80% !important;
+    height: 30%;
+    margin-top: 2rem;
+  }
+}

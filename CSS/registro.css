@@ -1,0 +1,33 @@
+.cont-principal {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(../img/Bg-home.png);
+}
+
+.form-registro {
+    width: 65%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-evenly;
+}
+
+.form-registro img{
+    height: 90%;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .form-registro img{
+        display: none;
+    }
+    .form-registro {
+        width: 100%;
+    }
+}
